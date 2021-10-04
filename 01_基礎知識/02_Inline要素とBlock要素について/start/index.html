@@ -9,8 +9,36 @@
 </head>
 
 <body>
+    <!-- インライン要素 横幅縦幅は指定できず、改行しない。横に並ぶ-->
     <span>こんにちは！ 日本！</span>
-    <img src="image-1.jpg" alt="">
+    <span>こんにちは！ 日本！</span>
+    <span>こんにちは！ 日本！</span>
+    <span>こんにちは！ 日本！</span>
+    <!-- ブロック要素 縦幅横幅指定できる。縦にならぶ-->
+    <div>こんにちは！ 日本！</div>
+    <div>こんにちは！ 日本！</div>
+    <div>こんにちは！ 日本！</div>
+    <div>こんにちは！ 日本！</div>
+        <style>
+            /* widthとheightは無視されるが、ディスプレイプロパティをブロックと指定するとブロック要素として扱われる */
+            span{
+                display: block;
+                margin: 0 auto;
+                width: 300px;
+                height: 400px;
+                background-color: magenta;
+            }
+            /* inline-blockを指定すると縦幅横幅の指定はブロック要素と同じになるが、並び方はインライン要素と同じになる */
+            body{
+                text-align: center;
+            }
+            div{
+                display: inline-block;
+                width: 300px;
+                height: 400px;
+                background-color: magenta;
+            }
+        </style>
 </body>
 
 </html>
