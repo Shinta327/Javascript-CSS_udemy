@@ -1,0 +1,24 @@
+body {
+  /* インライン要素の中央揃え*/
+  text-align: center;
+}
+
+span {
+  display: inline-block;
+  /* ブロック要素の中央揃え*/
+  margin: 0 auto;
+  width: 100px;
+  height: 400px;
+  background-color: magenta;
+}
+
+/* クラスの指定 */
+.first {
+  background-color: gray;
+}
+
+/* idの指定 */
+#second {
+  background-color: aqua;
+}
+/* 複数のスタイルが同じ要素に指定されていた場合id>class>tagという順になる。 */
