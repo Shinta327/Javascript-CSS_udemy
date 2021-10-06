@@ -1,0 +1,29 @@
+/* 親要素のプロパティは子要素にも適用される */
+/* 親要素より子要素の方が詳細度が高いので子要素に設定したプロパティが優先される */
+/* id > class > 子要素 > 親要素 */
+.parent {
+  color: blue;
+  font-weight: 600;
+}
+
+span {
+  color: purple;
+}
+
+.cls {
+  color: orange;
+}
+
+#first {
+  color: magenta;
+}
+
+/* spanのみよりも親要素も指定した方が詳細度が高いが、idよりは低い */
+.parent span {
+  color: red;
+}
+
+/* 詳細度が同一の場合、後に記述したものの方が優先される */
+.parent span {
+  color: green;
+}
