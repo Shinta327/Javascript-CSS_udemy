@@ -14,8 +14,16 @@
   transition: all 0.3s;
 }
 
-.btn.float:hover {
-  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn-cube {
+  background: black;
+}
+
+.btn-cube .inner {
+  background-color: black;
 }
 /*# sourceMappingURL=style.css.map */

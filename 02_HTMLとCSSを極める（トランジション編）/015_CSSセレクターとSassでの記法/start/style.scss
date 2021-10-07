@@ -1,0 +1,35 @@
+$cwhite: white;
+$cblack: black;
+
+#container {
+  text-align: center;
+}
+
+.btn {
+  background-color: $cwhite;
+  color: black;
+  border: 1px solid $cblack;
+  padding: 10px 40px;
+  margin: 50px 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  // アンバサンドがbtnに変換
+  // &が親セレクタを代入
+  // 省略形は&の後に半角スペースを入れ込むものは省略できる
+  &:hover {
+    background-color: $cblack;
+    color: $cwhite;
+  }
+
+  // CSS変換時にセレクタが親要素+指定した文字列になる
+  &-cube {
+    background: $cblack;
+
+    // 親要素の中の.innerを指定する
+    & .inner {
+      background-color: $cblack;
+    }
+  }
+}
