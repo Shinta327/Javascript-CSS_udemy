@@ -29,5 +29,7 @@ div {
   width: 80px;
   height: 80px;
   background-color: violet;
+  position: -webkit-sticky;
+  position: sticky;
 }
 /*# sourceMappingURL=style.css.map */
