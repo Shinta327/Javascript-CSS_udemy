@@ -51,26 +51,3 @@ $cBlack: black;
     }
   }
 }
-
-#axis {
-  position: relative;
-  transform-style: preserve-3d;
-  perspective: 300px;
-  perspective-origin: 180px 200px;
-
-  & span {
-    display: inline-block;
-    position: absolute;
-    background-color: $cBlack;
-    width: 100px;
-    height: 3px;
-    transform-origin: bottom left;
-
-    &:nth-child(2) {
-      transform: rotateZ(90deg);
-    }
-    &:nth-child(3) {
-      transform: rotateY(90deg);
-    }
-  }
-}
