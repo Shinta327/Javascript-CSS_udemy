@@ -46,4 +46,9 @@
   -webkit-transform: none;
           transform: none;
 }
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */

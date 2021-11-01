@@ -42,4 +42,9 @@ $cBlack: black;
       }
     }
   }
+
+  &:hover {
+    background-color: $cBlack;
+    color: $cWhite;
+  }
 }
