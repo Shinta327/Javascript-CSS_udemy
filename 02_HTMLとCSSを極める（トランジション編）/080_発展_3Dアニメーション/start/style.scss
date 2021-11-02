@@ -18,10 +18,10 @@ $cBlack: black;
   &.cover-3d {
     position: relative;
     z-index: 1;
-    transform-style: preserve-3d;
-    perspective: 300px;
+    transform-style: preserve-3d; //子要素に対して3Dアニメーションを適用する
+    perspective: 300px; //奥行きの設定
 
-    & span {
+    & span{
       display: inline-block;
       transform: translateZ(20px);
     }
@@ -38,6 +38,7 @@ $cBlack: black;
       transform: rotateX(90deg);
       transition: all 0.3s;
       transform-origin: top center;
+      z-index: -1;
       opacity: 0;
     }
 
@@ -48,29 +49,6 @@ $cBlack: black;
         transform: none;
         opacity: 1;
       }
-    }
-  }
-}
-
-#axis {
-  position: relative;
-  transform-style: preserve-3d;
-  perspective: 300px;
-  perspective-origin: 180px 200px;
-
-  & span {
-    display: inline-block;
-    position: absolute;
-    background-color: $cBlack;
-    width: 100px;
-    height: 3px;
-    transform-origin: bottom left;
-
-    &:nth-child(2) {
-      transform: rotateZ(90deg);
-    }
-    &:nth-child(3) {
-      transform: rotateY(90deg);
     }
   }
 }
